@@ -1,0 +1,27 @@
+.container {
+    /*
+    display→表示方式
+    grid... →並べ方　repeat(列数, 幅)
+    gap→各要素の間の大きさ
+    */
+
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0px;
+}
+
+.item {
+    /*
+    border→枠線　soild→枠線の種類　色で設定ワンセット
+    */
+
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.wideItem {
+    border: 1px solid black;
+    padding: 16px;
+    /*二列分の幅を使う*/
+    grid-column: span 2;
+}
